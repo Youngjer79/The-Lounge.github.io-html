@@ -10,6 +10,113 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+	<style>
+		body, html{
+			height: 100%;
+			margin: 0;
+			font-size: 16px;
+			font-family:"Lato", sans-serif;
+			font-weight:400;
+			line-height: 1.8em;
+			color:#666;
+		}
+
+		/*Create a Parallax Effect */
+		.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+			position:relative;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		} 
+		
+		/*First image (Logo.Full height) */
+		.pimg1{
+			background-image: url('../img/lounge_area.jpg');
+			min-height: 100%;
+		}
+		
+		/*Second image (About) */
+		.pimg2{
+			background-image: url('../img/poetry_nightclub_las_vegas.jpg');
+			min-height: 500px;
+		}
+		
+		/*Third image (Gallery) */
+		.pimg3{
+			background-image: url('../img/food.jpg');
+			min-height: 500px;
+		}
+		
+		/*First image (Menu) */
+		.pimg4{
+			background-image: url('../img/bar.jpg');
+			min-height: 500px;
+		}
+		
+		/*First image (Packages) */
+		.pimg5{
+			background-image: url('../img/coach.png');
+			min-height: 500px;
+		}
+
+		.section{
+			text-align: center;
+			padding: 50px 80px;
+		}
+
+		.section-light{
+			background-color: #f4f4f4;
+			color: #666;
+		}
+
+		.section-dark{
+			background-color: #282e34;
+			color:#ddd;
+		}
+
+		.ptext{
+			position: absolute;
+			top:50%;
+			width: 100%;
+			text-align: center;
+			color: #000;
+			font-size: 100px;
+			font-weight: 600;
+			letter-spacing: 8px;
+			text-transform: uppercase;
+		}
+
+		.ptext .border{
+			background-color: #111;
+			color:#fff;
+			padding: 20px;
+			opacity: 0.70;
+		}
+
+		.ptext .border.trans{
+			background-color: transparent;
+
+		}
+
+		.container{
+			padding: 70px;
+		}
+		
+		.row{
+			margin: 0;
+			padding: 0;
+		}
+
+		.music{
+			display: none;
+		}
+		@media(max-device-width: 592px){
+			.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+				background-attachment: scroll;
+			}
+		}
+		
+	</style>	
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  	<div class="container-fluid">
