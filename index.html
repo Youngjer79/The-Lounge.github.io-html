@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="stlye.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,16 +26,16 @@
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		    	<ul class="nav navbar-nav navbar-right">
 		    		 <li class="active"><a href="#">Home</a></li>
-			      <li><a href="#">About</a></li>
-			      <li><a href="#">Gallery</a></li>
-			      <li><a href="#">Menu</a></li>
-			      <li><a href="#">Packages</a></li>
+			      <li><a href="#about">About</a></li>
+			      <li><a href="#gallery">Gallery</a></li>
+			      <li><a href="#food">Menu</a></li>
+			      <li><a href="#bottles">Packages</a></li>
 			      <li><a href="#">Contact</a></li>
 		    	</ul>
 		    </div>
 	  	</div>
 	</nav>
-		<iframe class="music" width="560" height="315" src="https://www.youtube.com/embed/JK0ug5bHW8E?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="music" width="560" height="315" src="https://www.youtube.com/embed/0ULOskkv7XQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<div class="pimg1">
 		<div class="ptext">
 			<span class="border">
@@ -44,7 +45,7 @@
 	</div>
 
 <!--Container (About Section) -->
-	<section class="section section-light">
+	<section id="about"class="section section-light">
 		<div class="container">
 		<h2>About Us</h2>
 		<p style="font-size: 30px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsam, perspiciatis, veritatis maxime consequatur et.</p>
@@ -57,114 +58,32 @@
 	</div>
 
 <!--Gallery section-->
-	<section class="section section-dark">	
-	<div class="container" id="img">
-		<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Gallery</h1>
-			<p style="font-size: 30px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsam, perspiciatis, veritatis maxime consequatur et.</p>	
-	    <div class="row">
-	    	<div class="col-sm-4">
-	    		<img src="img/chris_brown.jpg"
-	    		style="width: 100%;height: 250px; margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
+	<section id="gallery"  class="section section-dark">
+	<div class="container">
+		<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Photo Gallery</h1>
+			<p style="font-size: 30px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsam, perspiciatis, veritatis maxime consequatur et.</p>
+	  <div class="gallery">
+	  	<a href="img/chris_brown.jpg" data-lightbox="mygallery" data-title="Chris Brown"><img src="img/chris_brown.jpg" alt="Chris Brown"></a>
+			<a href="img/drake.jpg"data-lightbox="mygallery" data-title="Drake"><img src="img/drake.jpg" alt="Drake"></a>
+			<a href="img/cardi_b.jpg"data-lightbox="mygallery" data-title="Cardi B"><img src="img/cardi_b.jpg" alt="Cardi B"></a>
+			<a href="img/chance.jpg"data-lightbox="mygallery" data-title="Chance The Rapper"><img src="img/chance.jpg" alt="Chance"></a>
+			<a href="img/jammie_foxx.jpg"data-lightbox="mygallery" data-title="Jammie Foxx and Ludacris"><img src="img/jammie_foxx.jpg" alt="Jammie Foxx"></a>
+			<a href="img/hqdefault.jpg"data-lightbox="mygallery" data-title="The Love and Hip-Hop Atlanta Cast"><img src="img/hqdefault.jpg" alt="Love And Hip-Hop"></a>
+			<a href="img/ginuwine.jpg"data-lightbox="mygallery" data-title="Ginuwine"><img src="img/ginuwine.jpg" alt="Ginuwine"></a>
+			<a href="img/mehki_phifer_and_caludia_jordan.jpg"data-lightbox="mygallery" data-title="Mehki Phifer and Caludia Jordan"><img src="img/mehki_phifer_and_caludia_jordan.jpg" alt="Mehki Phifer and Caludia Jordan"></a>
+			<a href="img/richard-sherman_kam-chancellor.jpg"data-lightbox="mygallery" data-title="Richard Sherman and Kam Chancellor"><img src="img/richard-sherman_kam-chancellor.jpg" alt="Richard Sherman and Kam Chancellor"></a>
+			<a href="img/ryan-lochte_hakkasan.jpg"data-lightbox="mygallery" data-title="Ryan Locthe"><img src="img/ryan-lochte_hakkasan.jpg" alt="Ryan Locthe"></a>
+			<a href="img/daphne-joy-hosting.jpg"data-lightbox="mygallery" data-title="Daphne Joy"><img src="img/daphne-joy-hosting.jpg" alt="Daphne Joy"></a>
+			<a href="img/lit.jpg"data-lightbox="mygallery" data-title="A lit night at Lounge"><img src="img/lit.jpg" alt=""></a>
+			<a href="img/party.jpg"data-lightbox="mygallery" data-title="Party time"><img src="img/party.jpg" alt=""></a>
+			<a href="img/party2.jpg"data-lightbox="mygallery" data-title="Crowd is jamming"><img src="img/party2.jpg" alt=""></a>
+			<a href="img/alex-gideon.jpg"data-lightbox="mygallery" data-title="Alex Gideon in the house"><img src="img/alex-gideon.jpg" alt=""></a>
+			<a href="img/dj_turn_up.jpg"data-lightbox="mygallery" data-title="Dj Turn Up got the crowd lit!"><img src="img/dj_turn_up.jpg" alt=""></a>
+			<a href="img/smooth_sundays.jpg"data-lightbox="mygallery" data-title="The ladies love Smooth Sundays"><img src="img/smooth_sundays.jpg" alt=""></a>
+			<a href="img/surrender-in-las-vegas.jpg"data-lightbox="mygallery" data-title="Party goers"><img src="img/surrender-in-las-vegas.jpg" alt=""></a>
 
-	    	<div class="col-sm-4">
-	    		<img src="img/dj_turn_up.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/drake.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/cardi_b.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-	    </div>
-
-		<div class="row">
-	    	<div class="col-sm-4">
-	    		<img src="img/hqdefault.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/jammie_foxx.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/party2.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/daphne-joy-hosting.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-	    </div>
-
-		<div class="row">
-			<div class="col-sm-4">
-	    		<img src="img/ginuwine.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/lit.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/smooth_sundays.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/bottlegirls.png"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-		</div>
-
-		<div class="row">
-	    	<div class="col-sm-4">
-	    		<img src="img/chance.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/entrance.jpg"
-	    		style="width: 100%;height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/showcase.jpg"
-	    		style="width: 100%; height: 250px;margin:0; padding: 5px 5px 
-	    		5px 5px" onClick(this) class="hover-opacity" alt="">
-	    	</div>
-
-	    	<div class="col-sm-4">
-	    		<img src="img/reception.jpg"
-	    		style="width: 100%;
-			height: 250px;"onClick(this) class="hover-opacity" alt="">
-	    	</div>
-	    </div>	
-	</div>	
+	  </div>
+	</div>
 	</section>
 
 	<div class="pimg3">
@@ -172,97 +91,159 @@
 	</div>
 
 <!--Menu Section-->
-	<section class="section section-light">
-		<div class="container" id="menu">
-			<div class="content">
-		   <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
-		   <p style="font-size: 30px; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsam, perspiciatis, veritatis maxime consequatur et.</p>
-
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
-      </a>
-    </div>
-
-    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
-      <hr>
-   
-      <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
-      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
-      <hr>
-      
-      <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
-      <hr>
-
-      <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
-      <hr>
-
-      <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
-      <hr>
-
-      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
-    </div>
-
-    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-      <hr>
-   
-      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-      <p class="w3-text-grey">Ravioli filled with cheese</p>
-      <hr>
-      
-      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-      <hr>
-
-      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
-    </div>
-
-
-    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-      <p class="w3-text-grey">Ask the waiter</p>
-      <hr>
-   
-      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
-      <hr>
-      
-      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
-      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
-      <hr>
-      
-      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
-      <p class="w3-text-grey">Tomatoes and mozzarella</p>
-    </div><br>
-			</div>
+<div id="food" class="menu">
+	<h1 class="menu_title">The Lougne Kitchen</h1>
+	<div class="menu_items-container">
+		<div class="menu-item">
+			<div class="menu-item_name">Shrimp Cocktail</div>
+			<div class="menu-item_dotted-divider"></div>
+			<div class="menu_item_price">$8.99</div>
 		</div>
-	</section>
-
+		<div class="menu-item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			 Numquam vitae quidem vel alias, architecto nisi, animi ratione modi totam asperiores?</div>
+	</div>
+	<div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Hamburger</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Big fat juicy burger.</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Bacon</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Makes your life better or worse, who knows?</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Eggs</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Go good on stuff.</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Food item title here</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Food description here and lorem ipsum dolor sit amet, consectetur adipiscing elit, vestibulum dapibus imperdiet mauris rhoncus accumsan.</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Hamburger</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Big fat juicy burger.</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Bacon</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Makes your life better or worse, who knows?</div>
+	 </div>
+	 <div class="menu-item">
+		 <div class="menu-item__title">
+			 <div class="menu-item__name">Eggs</div>
+			 <div class="menu-item__dotted-divider"></div>
+			 <div class="menu-item__price">$14.95</div>
+		 </div>
+		 <div class="menu-item__description">Go good on stuff.</div>
+	 </div>
+ </div>
+</div>
 	<div class="pimg4">
 		<div class="ptext">
 		</div>
 	</div>
-	
-<!--Packages section-->
-	<section class="section section-dark">
-		<div class="container">
-		<h1  class="w3-center w3-jumbo" style="margin-bottom:64px">Packages</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsam, perspiciatis, veritatis maxime consequatur et.</p>
+
+<!--Bottle service section-->
+	<section id="bottles" class="section section-dark">
+		<div class="menu">
+			<h1 class="menu_title">Bottle Service</h1>
+			<p>VIP packages start at $200 for one premium bottle and one bottle of champagne for six people.</p>
+			<div class="package">
+				<img src="img/bottleservice.png" alt="">
+				<img src="img/vip-service.jpg" alt="">
+				<img src="img/bottle_service.jpg" alt="">
+				<img src="img/bottlegirls.jpg" alt="">
+				<img src="img/bottlegirls.png" alt="">
+				<img src="img/VIP_collage.jpg" alt="">
+			</div>
+			<div class="menu_items-container">
+				<div class="menu-item">
+					<div class="menu-item_name">Shrimp Cocktail</div>
+					<div class="menu-item_dotted-divider"></div>
+					<div class="menu_item_price">$8.99</div>
+				</div>
+				<div class="menu-item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					 Numquam vitae quidem vel alias, architecto nisi, animi ratione modi totam asperiores?</div>
+			</div>
+			<div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Hamburger</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Big fat juicy burger.</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Bacon</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Makes your life better or worse, who knows?</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Eggs</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Go good on stuff.</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Food item title here</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Food description here and lorem ipsum dolor sit amet, consectetur adipiscing elit, vestibulum dapibus imperdiet mauris rhoncus accumsan.</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Hamburger</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Big fat juicy burger.</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Bacon</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Makes your life better or worse, who knows?</div>
+			 </div>
+			 <div class="menu-item">
+				 <div class="menu-item__title">
+					 <div class="menu-item__name">Eggs</div>
+					 <div class="menu-item__dotted-divider"></div>
+					 <div class="menu-item__price">$14.95</div>
+				 </div>
+				 <div class="menu-item__description">Go good on stuff.</div>
+			 </div>
+		 </div>
 		</div>
 	</section>
 		<div class="pimg5">
@@ -272,5 +253,13 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js" charset="utf-8"></script>
+	<script>
+	    lightbox.option({
+	      'resizeDuration': 400,
+	      'wrapAround': true
+	    })
+	</script>
+
 </body>
 </html>
