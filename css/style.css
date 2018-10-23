@@ -14,32 +14,32 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-		} 
-		
+		}
+
 		/*First image (Logo.Full height) */
 		.pimg1{
 			background-image: url('../img/lounge_area.jpg');
 			min-height: 100%;
 		}
-		
+
 		/*Second image (About) */
 		.pimg2{
 			background-image: url('../img/poetry_nightclub_las_vegas.jpg');
 			min-height: 500px;
 		}
-		
+
 		/*Third image (Gallery) */
 		.pimg3{
 			background-image: url('../img/food.jpg');
 			min-height: 500px;
 		}
-		
+
 		/*First image (Menu) */
 		.pimg4{
 			background-image: url('../img/bar.jpg');
 			min-height: 500px;
 		}
-		
+
 		/*First image (Packages) */
 		.pimg5{
 			background-image: url('../img/coach.png');
@@ -88,18 +88,91 @@
 		.container{
 			padding: 70px;
 		}
-		
-		.row{
-			margin: 0;
-			padding: 0;
+
+		.gallery{
+			margin: 10px 50px;
+		}
+
+		.gallery img{
+			height: 300px;
+			width: 300px;
+			padding: 5px;
+			filter: grayscale(100%);
+			transition: 1s;
+		}
+
+		.gallery img:hover{
+			filter:grayscale(0);
+			transform: scale(1.1);
 		}
 
 		.music{
 			display: none;
 		}
+
+  .mygallery{
+		height:400px;
+		width: auto;
+	}
+
+	.package img{
+		height: 500px;
+		width: 100%;
+	}
+		.menu {
+  margin: 5% 10%;
+  padding: 2.5% 4% 5%;
+  border-radius: 2px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+              0  6px 30px 5px rgba(0, 0, 0, 0.12),
+              0  8px 10px -5px rgba(0, 0, 0, 0.12);
+
+  &__title {
+    text : {
+      align: center;
+      transform: uppercase;
+    }
+  }
+
+  &__items-container {
+    display: grid;
+    grid : {
+      template-columns: repeat(2, 1fr);
+      gap: 5% 2%;
+    }
+  }
+
+  &-item {
+    &__title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__name {
+      font : {
+        size: 90%;
+        weight: bold;
+      }
+      text-transform: uppercase;
+    }
+
+    &__dotted-divider {
+      margin: auto 2%;
+      border-bottom: 1px dotted #777;
+      flex-grow: 1;
+    }
+
+    &__description {
+      font-size: 80%;
+      color: #666;
+      line-height: 1.7;
+      text-transform: capitalize;
+    }
+  }
+}
+
 		@media(max-device-width: 592px){
 			.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
 				background-attachment: scroll;
 			}
 		}
-		
